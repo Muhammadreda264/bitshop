@@ -1,0 +1,701 @@
+[{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Foil - Round Foil",
+    "price": 36.52
+  }
+}, {
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Bread Bowl Plain",
+    "price": 79.9
+  }
+}, {
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Rolled Oats",
+    "price": 37.95
+  }
+}, {
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Steel Wool",
+    "price": 82.19
+  }
+}, {
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Wine - White, Ej Gallo",
+    "price": 75.58
+  }
+}, {
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "Stock - Veal, Brown",
+    "price": 51.62
+  }
+}, {
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Tomatoes - Vine Ripe, Yellow",
+    "price": 25.6
+  }
+}, {
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "Lobster - Cooked",
+    "price": 60.28
+  }
+}, {
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "name": "Capon - Breast, Wing On",
+    "price": 34.18
+  }
+}, {
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "name": "Apple - Custard",
+    "price": 27.2
+  }
+}, {
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "name": "Vinegar - White",
+    "price": 22.39
+  }
+}, {
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "Lemon Pepper",
+    "price": 58.41
+  }
+}, {
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "name": "Silicone Paper 16.5x24",
+    "price": 98.94
+  }
+}, {
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "Pasta - Lasagna Noodle, Frozen",
+    "price": 51.09
+  }
+}, {
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "name": "Syrup - Monin, Amaretta",
+    "price": 83.72
+  }
+}, {
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "name": "Onions - Green",
+    "price": 36.72
+  }
+}, {
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "name": "Cake - Bande Of Fruit",
+    "price": 42.53
+  }
+}, {
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "Pastry - French Mini Assorted",
+    "price": 63.74
+  }
+}, {
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "Pork - Backfat",
+    "price": 43.31
+  }
+}, {
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "Relish",
+    "price": 71.86
+  }
+}, {
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "name": "Tea Leaves - Oolong",
+    "price": 4.77
+  }
+}, {
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "name": "Olives - Nicoise",
+    "price": 84.92
+  }
+}, {
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "name": "Dried Figs",
+    "price": 57.72
+  }
+}, {
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "name": "Pernod",
+    "price": 58.17
+  }
+}, {
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "name": "Vol Au Vents",
+    "price": 38.77
+  }
+}, {
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "name": "Bread Bowl Plain",
+    "price": 92.97
+  }
+}, {
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "name": "Tea - Darjeeling, Azzura",
+    "price": 8.98
+  }
+}, {
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "name": "French Kiss Vanilla",
+    "price": 75.73
+  }
+}, {
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "name": "Paper Cocktail Umberlla 80 - 180",
+    "price": 19.04
+  }
+}, {
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "name": "Ranchero - Primerba, Paste",
+    "price": 48.21
+  }
+}, {
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "name": "Beans - Soya Bean",
+    "price": 97.72
+  }
+}, {
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "name": "Wine - Pinot Noir Pond Haddock",
+    "price": 72.47
+  }
+}, {
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "name": "Sprouts - Peppercress",
+    "price": 26.15
+  }
+}, {
+  "model": "products.product",
+  "pk": 34,
+  "fields": {
+    "name": "Flavouring Vanilla Artificial",
+    "price": 75.78
+  }
+}, {
+  "model": "products.product",
+  "pk": 35,
+  "fields": {
+    "name": "Wine - Chianti Classico Riserva",
+    "price": 72.78
+  }
+}, {
+  "model": "products.product",
+  "pk": 36,
+  "fields": {
+    "name": "Chevere Logs",
+    "price": 59.81
+  }
+}, {
+  "model": "products.product",
+  "pk": 37,
+  "fields": {
+    "name": "Creme De Cacao White",
+    "price": 3.77
+  }
+}, {
+  "model": "products.product",
+  "pk": 38,
+  "fields": {
+    "name": "Wine - Barbera Alba Doc 2001",
+    "price": 54.15
+  }
+}, {
+  "model": "products.product",
+  "pk": 39,
+  "fields": {
+    "name": "Truffle - Whole Black Peeled",
+    "price": 42.43
+  }
+}, {
+  "model": "products.product",
+  "pk": 40,
+  "fields": {
+    "name": "French Kiss Vanilla",
+    "price": 16.89
+  }
+}, {
+  "model": "products.product",
+  "pk": 41,
+  "fields": {
+    "name": "Lettuce - Escarole",
+    "price": 72.22
+  }
+}, {
+  "model": "products.product",
+  "pk": 42,
+  "fields": {
+    "name": "Bag - Regular Kraft 20 Lb",
+    "price": 28.77
+  }
+}, {
+  "model": "products.product",
+  "pk": 43,
+  "fields": {
+    "name": "Vegetable - Base",
+    "price": 59.34
+  }
+}, {
+  "model": "products.product",
+  "pk": 44,
+  "fields": {
+    "name": "Chinese Foods - Pepper Beef",
+    "price": 39.56
+  }
+}, {
+  "model": "products.product",
+  "pk": 45,
+  "fields": {
+    "name": "Oil - Grapeseed Oil",
+    "price": 83.88
+  }
+}, {
+  "model": "products.product",
+  "pk": 46,
+  "fields": {
+    "name": "Wine - Zonnebloem Pinotage",
+    "price": 42.09
+  }
+}, {
+  "model": "products.product",
+  "pk": 47,
+  "fields": {
+    "name": "Tart Shells - Sweet, 3",
+    "price": 83.31
+  }
+}, {
+  "model": "products.product",
+  "pk": 48,
+  "fields": {
+    "name": "Split Peas - Yellow, Dry",
+    "price": 6.08
+  }
+}, {
+  "model": "products.product",
+  "pk": 49,
+  "fields": {
+    "name": "Wine - Jackson Triggs Okonagan",
+    "price": 8.68
+  }
+}, {
+  "model": "products.product",
+  "pk": 50,
+  "fields": {
+    "name": "Wine - Red, Black Opal Shiraz",
+    "price": 86.52
+  }
+}, {
+  "model": "products.product",
+  "pk": 51,
+  "fields": {
+    "name": "Tea - Darjeeling, Azzura",
+    "price": 58.95
+  }
+}, {
+  "model": "products.product",
+  "pk": 52,
+  "fields": {
+    "name": "Bread - Pullman, Sliced",
+    "price": 71.95
+  }
+}, {
+  "model": "products.product",
+  "pk": 53,
+  "fields": {
+    "name": "Table Cloth 54x72 White",
+    "price": 56.61
+  }
+}, {
+  "model": "products.product",
+  "pk": 54,
+  "fields": {
+    "name": "Cheese Cheddar Processed",
+    "price": 68.2
+  }
+}, {
+  "model": "products.product",
+  "pk": 55,
+  "fields": {
+    "name": "Veal - Round, Eye Of",
+    "price": 41.0
+  }
+}, {
+  "model": "products.product",
+  "pk": 56,
+  "fields": {
+    "name": "Glaze - Apricot",
+    "price": 64.16
+  }
+}, {
+  "model": "products.product",
+  "pk": 57,
+  "fields": {
+    "name": "Beef - Ox Tongue, Pickled",
+    "price": 41.41
+  }
+}, {
+  "model": "products.product",
+  "pk": 58,
+  "fields": {
+    "name": "Limes",
+    "price": 84.36
+  }
+}, {
+  "model": "products.product",
+  "pk": 59,
+  "fields": {
+    "name": "Grapes - Green",
+    "price": 3.83
+  }
+}, {
+  "model": "products.product",
+  "pk": 60,
+  "fields": {
+    "name": "Zucchini - Green",
+    "price": 23.53
+  }
+}, {
+  "model": "products.product",
+  "pk": 61,
+  "fields": {
+    "name": "Peas - Frozen",
+    "price": 41.29
+  }
+}, {
+  "model": "products.product",
+  "pk": 62,
+  "fields": {
+    "name": "Milk - Buttermilk",
+    "price": 88.7
+  }
+}, {
+  "model": "products.product",
+  "pk": 63,
+  "fields": {
+    "name": "Appetizer - Mini Egg Roll, Shrimp",
+    "price": 43.98
+  }
+}, {
+  "model": "products.product",
+  "pk": 64,
+  "fields": {
+    "name": "Veal - Sweetbread",
+    "price": 38.71
+  }
+}, {
+  "model": "products.product",
+  "pk": 65,
+  "fields": {
+    "name": "Tortillas - Flour, 10",
+    "price": 2.34
+  }
+}, {
+  "model": "products.product",
+  "pk": 66,
+  "fields": {
+    "name": "Beer - Tetleys",
+    "price": 50.74
+  }
+}, {
+  "model": "products.product",
+  "pk": 67,
+  "fields": {
+    "name": "Shiro Miso",
+    "price": 51.51
+  }
+}, {
+  "model": "products.product",
+  "pk": 68,
+  "fields": {
+    "name": "Calypso - Black Cherry Lemonade",
+    "price": 61.14
+  }
+}, {
+  "model": "products.product",
+  "pk": 69,
+  "fields": {
+    "name": "Carbonated Water - Raspberry",
+    "price": 50.45
+  }
+}, {
+  "model": "products.product",
+  "pk": 70,
+  "fields": {
+    "name": "Ketchup - Tomato",
+    "price": 41.33
+  }
+}, {
+  "model": "products.product",
+  "pk": 71,
+  "fields": {
+    "name": "Fuji Apples",
+    "price": 36.6
+  }
+}, {
+  "model": "products.product",
+  "pk": 72,
+  "fields": {
+    "name": "Cauliflower",
+    "price": 2.81
+  }
+}, {
+  "model": "products.product",
+  "pk": 73,
+  "fields": {
+    "name": "Chips Potato All Dressed - 43g",
+    "price": 19.75
+  }
+}, {
+  "model": "products.product",
+  "pk": 74,
+  "fields": {
+    "name": "Ice Cream - Vanilla",
+    "price": 9.96
+  }
+}, {
+  "model": "products.product",
+  "pk": 75,
+  "fields": {
+    "name": "Turkey - Breast, Boneless Sk On",
+    "price": 36.74
+  }
+}, {
+  "model": "products.product",
+  "pk": 76,
+  "fields": {
+    "name": "Oil - Sesame",
+    "price": 32.33
+  }
+}, {
+  "model": "products.product",
+  "pk": 77,
+  "fields": {
+    "name": "Tea Leaves - Oolong",
+    "price": 60.26
+  }
+}, {
+  "model": "products.product",
+  "pk": 78,
+  "fields": {
+    "name": "Napkin - Dinner, White",
+    "price": 3.51
+  }
+}, {
+  "model": "products.product",
+  "pk": 79,
+  "fields": {
+    "name": "Sauce - Hp",
+    "price": 87.27
+  }
+}, {
+  "model": "products.product",
+  "pk": 80,
+  "fields": {
+    "name": "Wine - Chateauneuf Du Pape",
+    "price": 17.06
+  }
+}, {
+  "model": "products.product",
+  "pk": 81,
+  "fields": {
+    "name": "Beef - Prime Rib Aaa",
+    "price": 22.46
+  }
+}, {
+  "model": "products.product",
+  "pk": 82,
+  "fields": {
+    "name": "Soup - Boston Clam Chowder",
+    "price": 32.28
+  }
+}, {
+  "model": "products.product",
+  "pk": 83,
+  "fields": {
+    "name": "Muffin Hinge - 211n",
+    "price": 30.99
+  }
+}, {
+  "model": "products.product",
+  "pk": 84,
+  "fields": {
+    "name": "Sultanas",
+    "price": 86.92
+  }
+}, {
+  "model": "products.product",
+  "pk": 85,
+  "fields": {
+    "name": "Snapple Raspberry Tea",
+    "price": 45.49
+  }
+}, {
+  "model": "products.product",
+  "pk": 86,
+  "fields": {
+    "name": "Bar Energy Chocchip",
+    "price": 43.46
+  }
+}, {
+  "model": "products.product",
+  "pk": 87,
+  "fields": {
+    "name": "Trout - Hot Smkd, Dbl Fillet",
+    "price": 19.38
+  }
+}, {
+  "model": "products.product",
+  "pk": 88,
+  "fields": {
+    "name": "Artichoke - Bottom, Canned",
+    "price": 56.14
+  }
+}, {
+  "model": "products.product",
+  "pk": 89,
+  "fields": {
+    "name": "Sugar - Icing",
+    "price": 29.17
+  }
+}, {
+  "model": "products.product",
+  "pk": 90,
+  "fields": {
+    "name": "Bread - Rolls, Corn",
+    "price": 14.46
+  }
+}, {
+  "model": "products.product",
+  "pk": 91,
+  "fields": {
+    "name": "Cumin - Ground",
+    "price": 27.11
+  }
+}, {
+  "model": "products.product",
+  "pk": 92,
+  "fields": {
+    "name": "Garam Marsala",
+    "price": 53.92
+  }
+}, {
+  "model": "products.product",
+  "pk": 93,
+  "fields": {
+    "name": "Wanton Wrap",
+    "price": 15.85
+  }
+}, {
+  "model": "products.product",
+  "pk": 94,
+  "fields": {
+    "name": "Trout Rainbow Whole",
+    "price": 90.6
+  }
+}, {
+  "model": "products.product",
+  "pk": 95,
+  "fields": {
+    "name": "Sobe - Lizard Fuel",
+    "price": 97.9
+  }
+}, {
+  "model": "products.product",
+  "pk": 96,
+  "fields": {
+    "name": "Pastry - Key Limepoppy Seed Tea",
+    "price": 38.08
+  }
+}, {
+  "model": "products.product",
+  "pk": 97,
+  "fields": {
+    "name": "Ecolab Digiclean Mild Fm",
+    "price": 48.61
+  }
+}, {
+  "model": "products.product",
+  "pk": 98,
+  "fields": {
+    "name": "Chinese Foods - Chicken",
+    "price": 52.45
+  }
+}, {
+  "model": "products.product",
+  "pk": 99,
+  "fields": {
+    "name": "Lettuce - Lolla Rosa",
+    "price": 77.68
+  }
+}, {
+  "model": "products.product",
+  "pk": 100,
+  "fields": {
+    "name": "Liners - Banana, Paper",
+    "price": 57.82
+  }
+}]
