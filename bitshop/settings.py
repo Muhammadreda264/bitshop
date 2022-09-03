@@ -22,6 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', default='2zz@l_@(4j%x1d79!iyg$1yb0c1q*=evk_3%x_0x')
+SECURE_SSL_REDIRECT = True # [1]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
