@@ -2,7 +2,7 @@
 # bitshop sample application
 
 ## Setup
-
+Live URL:https://bit68shop.herokuapp.com/
 The first thing to do is to clone the repository:
 
 ```sh
