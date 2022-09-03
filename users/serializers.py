@@ -7,8 +7,11 @@ from django.contrib.auth import authenticate
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('email', 'username', 'password', 'first_name', 'last_name', 'cart', 'orders')
-        extra_kwargs = {'password': {'write_only': True}, 'cart': {'read_only': True}}
+        fields = ('email', 'username', 'password',
+                  'first_name', 'last_name', 'cart', 'orders')
+        extra_kwargs = {
+            'password': {'write_only': True}, 'cart': {'read_only': True}
+        }
 
     def create(self, validated_data):
         user = User.objects.create(

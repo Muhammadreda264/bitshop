@@ -18,10 +18,11 @@ class CartSerializer(serializers.HyperlinkedModelSerializer):
 
 class CartItemSerializer(serializers.HyperlinkedModelSerializer):
     total = serializers.ReadOnlyField()
+
     class Meta:
         model = CartItem
         fields = '__all__'
-        extra_kwargs = {'quantity': {'required': False},'cart':{"read_only":True}}
+        extra_kwargs = {'quantity': {'required': False}, 'cart': {"read_only": True}}
 
 
 class CartItemCreateSerializer(serializers.ModelSerializer):

@@ -16,7 +16,10 @@ class Order(models.Model):
         self.save()
         cart_items = cart.items.all()
         for cart_item in cart_items:
-            OrderItem(quantity=cart_item.quantity, order=self, product=cart_item.product, total=cart_item.total).save()
+            OrderItem(quantity=cart_item.quantity,
+                      order=self,
+                      product=cart_item.product,
+                      total=cart_item.total).save()
         return self
 
 

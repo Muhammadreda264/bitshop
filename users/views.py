@@ -4,7 +4,6 @@ from rest_framework import viewsets, status, generics
 from rest_framework.response import Response
 
 from users.serializers import UserSerializer, LoginSerializer
-from rest_framework import views
 
 
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
@@ -15,9 +14,11 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
+        context = self.get_serializer_context()
+        message = "User Created Successfully "
         return Response({
-            "user": UserSerializer(user, context=self.get_serializer_context()).data,
-            "message": "User Created Successfully.",
+            "user": UserSerializer
+            (user, context=context).data, "message": message
         })
 
 

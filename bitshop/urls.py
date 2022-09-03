@@ -23,18 +23,15 @@ from products.views import ProductViewSet
 from users.views import UserViewSet, LoginView
 
 router = DefaultRouter()
-router.register(r'products', ProductViewSet,basename="product")
-router.register(r'cart-items', CartItemViewSet,basename="cartitem")
-router.register(r'carts', CartViewSet,basename="cart")
-router.register(r'order-items', OrderItemViewSet,basename="orderitem")
-router.register(r'orders', OrderViewSet,basename="order")
-router.register(r'users', UserViewSet,basename="user")
-
-
+router.register(r'products', ProductViewSet, basename="product")
+router.register(r'cart-items', CartItemViewSet, basename="cartitem")
+router.register(r'carts', CartViewSet, basename="cart")
+router.register(r'order-items', OrderItemViewSet, basename="orderitem")
+router.register(r'orders', OrderViewSet, basename="order")
+router.register(r'users', UserViewSet, basename="user")
 
 urlpatterns = [
     path('', include(router.urls)),
     path('login/', LoginView.as_view()),
     path('admin/', admin.site.urls),
 ]
-

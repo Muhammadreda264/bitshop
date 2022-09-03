@@ -1,4 +1,4 @@
-from rest_framework import generics, viewsets, filters
+from rest_framework import viewsets, filters
 
 from products.models import Product
 from products.serializers import ProductSerializer

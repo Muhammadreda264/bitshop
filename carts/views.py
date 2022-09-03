@@ -1,6 +1,7 @@
 from django.core.exceptions import ObjectDoesNotExist
 from rest_framework import viewsets
 from rest_framework.decorators import action
+from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 from carts.models import Cart, CartItem
 from carts.serializers import CartSerializer, CartItemSerializer, CartItemCreateSerializer
@@ -32,6 +33,12 @@ class CartViewSet(viewsets.ReadOnlyModelViewSet):
         """
         cart = self.get_object()
         product = request.data.get('product')
+
+        if not isinstance(product, int):
+            raise ValidationError(
+                f'{product}s is not a  number',
+
+            )
         try:
             item = CartItem.objects.get(product=product, cart=cart.pk)
             quantity = request.data.get('quantity', 1)

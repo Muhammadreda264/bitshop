@@ -11,8 +11,5 @@ class Item(models.Model):
     modified_date = models.DateTimeField(auto_now=True)
     quantity = models.IntegerField(default=1)
 
-
     class Meta:
         abstract = True
-
-

@@ -19,7 +19,6 @@ class Cart(models.Model):
         return self
 
 
-
 class CartItem(Item):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='items')
     product = models.OneToOneField(
@@ -31,6 +30,3 @@ class CartItem(Item):
     @property
     def total(self):
         return self.quantity * self.product.price
-
-
-
