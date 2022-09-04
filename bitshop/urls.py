@@ -1,21 +1,8 @@
-"""bitshop URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework.routers import DefaultRouter
+from rest_framework.routers import DefaultRouter, SimpleRouter
+from rest_framework_nested import routers
+
 
 from carts.views import CartItemViewSet, CartViewSet
 from orders.views import OrderViewSet, OrderItemViewSet
@@ -26,12 +13,23 @@ router = DefaultRouter()
 router.register(r'products', ProductViewSet, basename="product")
 router.register(r'cart-items', CartItemViewSet, basename="cartitem")
 router.register(r'carts', CartViewSet, basename="cart")
-router.register(r'order-items', OrderItemViewSet, basename="orderitem")
 router.register(r'orders', OrderViewSet, basename="order")
+orders_router = routers.NestedSimpleRouter(
+    router,
+    r'orders',
+    lookup='order')
+orders_router.register(
+    r'items',
+    OrderItemViewSet,
+    basename='order-item'
+)
+
 router.register(r'users', UserViewSet, basename="user")
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('', include(orders_router.urls)),
     path('login/', LoginView.as_view()),
     path('admin/', admin.site.urls),
 ]
+
