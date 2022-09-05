@@ -3,6 +3,8 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
+from rest_framework.status import HTTP_201_CREATED
+
 from carts.models import Cart, CartItem
 from carts.serializers import CartSerializer, CartItemSerializer, CartItemCreateSerializer
 
@@ -26,36 +28,35 @@ class CartViewSet(viewsets.ReadOnlyModelViewSet):
         cart.empty()
         return Response(CartSerializer(cart, context={'request': request}).data)
 
-    @action(detail=True, methods=['post'])
-    def item(self, request, pk=None):
-        """
-        Add item to cart
-        """
-        cart = self.get_object()
-        product = request.data.get('product')
 
-        if not isinstance(product, int):
-            raise ValidationError(
-                f'{product}s is not a  number',
-
-            )
-        try:
-            item = CartItem.objects.get(product=product, cart=cart.pk)
-            quantity = request.data.get('quantity', 1)
-            item.quantity = item.quantity + quantity
-            item.save()
-        except ObjectDoesNotExist:
-            print(request.data.get('product'))
-            print(cart)
-            serializer = CartItemCreateSerializer(data={"product": product, "cart": cart.pk})
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-        return Response(CartSerializer(cart, context={'request': request}).data)
-
-
-class CartItemViewSet(viewsets.ReadOnlyModelViewSet):
+class CartItemViewSet(viewsets.ModelViewSet):
     """
     This viewset automatically provides `list` and `retrieve` actions.
     """
-    queryset = CartItem.objects.all()
+
+    def get_queryset(self):
+        return CartItem.objects.filter(cart=self.kwargs['cart_pk'])
+
     serializer_class = CartItemSerializer
+
+    def create(self, request, *args, **kwargs):
+        """
+              Add item to cart
+        """
+        cart = self.kwargs['cart_pk']
+        product = request.data.get('product')
+        quantity = request.data.get('quantity', 1)
+        print(quantity)
+        serializer = CartItemCreateSerializer(data={"product": product,
+                                                    "cart": cart,
+                                                    "quantity": quantity},
+                                              context={'request': request})
+        try:
+            item = CartItem.objects.get(product=product, cart=cart)
+            item.quantity = item.quantity + quantity
+            item.save()
+
+        except ObjectDoesNotExist:
+            if serializer.is_valid(raise_exception=True):
+                item = serializer.save()
+        return Response(CartItemSerializer(item, context={'request': request}).data,status=HTTP_201_CREATED)

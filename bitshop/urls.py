@@ -11,13 +11,27 @@ from users.views import UserViewSet, LoginView
 
 router = DefaultRouter()
 router.register(r'products', ProductViewSet, basename="product")
-router.register(r'cart-items', CartItemViewSet, basename="cartitem")
+
 router.register(r'carts', CartViewSet, basename="cart")
+
+cart_router = routers.NestedSimpleRouter(
+    router,
+    r'carts',
+    lookup='cart')
+
+cart_router.register(
+    r'items',
+    CartItemViewSet,
+    basename='cart-item'
+)
+
 router.register(r'orders', OrderViewSet, basename="order")
+
 orders_router = routers.NestedSimpleRouter(
     router,
     r'orders',
     lookup='order')
+
 orders_router.register(
     r'items',
     OrderItemViewSet,
@@ -29,6 +43,7 @@ router.register(r'users', UserViewSet, basename="user")
 urlpatterns = [
     path('', include(router.urls)),
     path('', include(orders_router.urls)),
+    path('', include(cart_router.urls)),
     path('login/', LoginView.as_view()),
     path('admin/', admin.site.urls),
 ]
